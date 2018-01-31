@@ -15,6 +15,7 @@ public class Test1Controller1 {
 @ResponseBody
 List test1() {
 
+
 	List list = new ArrayList();
 	
 	String[]t strs = {"heloo", "hi", "good"};
