@@ -7,16 +7,27 @@
 <title>Insert title here</title>
 </head>
 <script>
-	
+
 </script>
 <body>
-	<form action="test6_1">
+	<form action="test7_1">
 		<input type="text" name="testParam" />
 		<input type="submit" value="보내기" />
 	</form>
-	
-	<form action="test6_2">
+
+	<form action="test7_2">
 		<input type="text" name="testParam" placeholder="funSpring을 입력해주세요." />
+		<input type="submit" value="보내기" />
+	</form>
+    <hr>
+    <form action="test7_3">
+        <div>
+		    아이디 <input type="text" name="loginId" />
+        </div>
+        <div>
+            비밀번호 <input type="password" name="password" />
+        </div>
+        
 		<input type="submit" value="보내기" />
 	</form>
 </body>

@@ -14,20 +14,20 @@ import uni.wonkwang.exam.model.Article;
 @Controller
 public class testController {
 
-	@RequestMapping("test6_1")
+	@RequestMapping("test__1")
 	@ResponseBody
 	int test6_1(int input1, int input2) {
 		return input1 + input2;
 	}
-	
-	@RequestMapping("test6_2")
+
+	@RequestMapping("test__2")
 	@ResponseBody
 	String test6_1(String str) {
 		return str;
 	}
-	
-	
-	@RequestMapping("test6_3")
+
+
+	@RequestMapping("test__3")
 	@ResponseBody
 	// 확인주소 :
 	// http://localhost:8081/exam2_param_intArrayList?input1=20&input1=10&input1=5
@@ -40,28 +40,28 @@ public class testController {
 
 		return input1;
 	}
-	
-	@RequestMapping("test6_4")
+
+	@RequestMapping("test__4")
 	@ResponseBody
 	// 확인주소 : http://localhost:8081/exam2_param_Map?input1=1&input2=2&input3=3
 	Map exam2_param_Map(@RequestParam Map<String, String> param) {
 		return param;
 	}
 
-	@RequestMapping("test6_5")
+	@RequestMapping("test__5")
 	@ResponseBody
 	// 확인주소 : http://localhost:8081/exam2_param_Map_v2?input1=1&input2=2&input3=3
 	Map exam2_param_Map_v2(@RequestParam Map<String, Object> param) {
 		return param;
 	}
-	
-	@RequestMapping("test6_6")
+
+	@RequestMapping("test__6")
 	@ResponseBody
 	// 확인주소 :
 	// http://localhost:8081/exam3_return_Article_v2
 	Article exam3_return_Article() {
 		Article article = new Article();
-		
+
 		article.setId(1);
 		article.setTitle("제목1");
 		article.setBody("내용1");
