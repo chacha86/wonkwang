@@ -16,12 +16,16 @@ public class testController {
 
 	@RequestMapping("test__1")
 	@ResponseBody
+	// 확인주소 :
+	// http://localhost:8081/test__1?input1=20&input1=10&input1=5
 	int test6_1(int input1, int input2) {
 		return input1 + input2;
 	}
 
 	@RequestMapping("test__2")
 	@ResponseBody
+	// 확인주소 :
+	// http://localhost:8081/test__2?input1=20&input1=10&input1=5
 	String test6_1(String str) {
 		return str;
 	}
@@ -30,7 +34,7 @@ public class testController {
 	@RequestMapping("test__3")
 	@ResponseBody
 	// 확인주소 :
-	// http://localhost:8081/exam2_param_intArrayList?input1=20&input1=10&input1=5
+	// http://localhost:8081/test__3?input1=20&input1=10&input1=5
 	List exam2_param_intArrayList(@RequestParam ArrayList<Integer> input1) {
 		input1.add(99);
 		input1.add(100);
@@ -43,14 +47,14 @@ public class testController {
 
 	@RequestMapping("test__4")
 	@ResponseBody
-	// 확인주소 : http://localhost:8081/exam2_param_Map?input1=1&input2=2&input3=3
+	// 확인주소 : http://localhost:8081/test__4?input1=1&input2=2&input3=3
 	Map exam2_param_Map(@RequestParam Map<String, String> param) {
 		return param;
 	}
 
 	@RequestMapping("test__5")
 	@ResponseBody
-	// 확인주소 : http://localhost:8081/exam2_param_Map_v2?input1=1&input2=2&input3=3
+	// 확인주소 : http://localhost:8081/test__5?input1=1&input2=2&input3=3
 	Map exam2_param_Map_v2(@RequestParam Map<String, Object> param) {
 		return param;
 	}
@@ -58,7 +62,7 @@ public class testController {
 	@RequestMapping("test__6")
 	@ResponseBody
 	// 확인주소 :
-	// http://localhost:8081/exam3_return_Article_v2
+	// http://localhost:8081/test__6
 	Article exam3_return_Article() {
 		Article article = new Article();
 
