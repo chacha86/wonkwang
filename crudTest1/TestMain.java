@@ -1,4 +1,4 @@
-package testyong;
+package crudExam;
 
 public class TestMain {
 
@@ -18,11 +18,10 @@ public class TestMain {
 		/* 고객에 대한 CRUD 기능을 수행하기 위한 객체 생성 : Management */
 		Management mngr = new Management();
 		
-		
-		
-		//mngr의 insert 함수를 구현하여 고객 등록을 해야합니다.
+		//mngr의 insert 메서드를 구현하여 고객 등록을 해야합니다.
 		System.out.println("\n### 고객 등록(Create) ###");
-		mngr.insertCustomer(new Customer("c001", "소지섭", "pw1111", 'M'));
+		
+		mngr.insertCustomer(new Customer("yunajjang", "김연아", "pw5555", 'F'));
 		
 		
 		
@@ -34,13 +33,13 @@ public class TestMain {
 		// Customer를 인자로 해당 정보를 저장할 수 있는 insertCustomer 함수 구현.
 		//중복 등록 시 "c001 아이디로 이미 등록되어 있습니다." 출력. 
 		System.out.println("\n### 고객 중복 등록  ###");
-		mngr.insert(new Customer("c001", "임꺽정", "pw5555", 'F'));
+		mngr.insertCustomer(new Customer("yunajjang", "임꺽정", "pw5555", 'F'));
 		
 		
 		
 		//아이디를 인자로 하여 해당 아이디의 정보를 검색 할 수 있는 searchCustomer 함수를 구현.
 		System.out.println("\n### 특정 고객 검색(Read) ###");
-		
+		mngr.searchCustomer("yunajjang").print();
 		
 		
 		//아이디를 인자로 하여 해당 아이디의 정보를 변경 할 수 있는 updateCustomer 함수 구현.
